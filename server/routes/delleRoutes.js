@@ -7,7 +7,7 @@ dotenv.config();
 const router = express.Router();
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_KEY,
 });
 router.route("/").get((req, res) => {
   res.send("hello from dell e !");

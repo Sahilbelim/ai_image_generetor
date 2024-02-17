@@ -49,16 +49,13 @@ const CreatePost = () => {
       setLoding(true);
       
       try {
-        const response = await fetch(
-          "http://localhost:8000/api/post",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(form),
-          }
-        );
+        const response = await fetch("https://sahilai.onrender.com/api/post", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        });
 
          await response.json();
        

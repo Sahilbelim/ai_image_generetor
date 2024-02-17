@@ -25,7 +25,7 @@ const Home = () => {
     const fatchPost = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:8000/api/post", {
+        const response = await fetch("https://sahilai.onrender.com/api/post", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
